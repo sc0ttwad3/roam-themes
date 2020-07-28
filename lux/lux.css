@@ -16,7 +16,8 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
 */
 :root {
     /* PRIMARY FONTS */
-    --main-font: 'Inter', sans-serif;
+	/* sc0ttwad3: add default prompt */
+    --main-font: 'Minion Pro', 'Inter', sans-serif;
     --main-font-color: #d9d9d9;
     --main-font-size: 1.0em;
 

@@ -13,11 +13,61 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
             - Super excited to have been selected to be on RoamResearch's Official theme's page!
             - For easy installation, create a page titled roam/css in RoamResearch and copy this code in
 
+
+Updated:    - Reworking the typography
+Edits by:   - Scott Alan Wade (https://www.scottalanwade.com)
+Typography	- Activated fonts for this specific Roam DB
+			      - Adobe Licensed
+			      - https://fonts.adobe.com/my_fonts?project_id=gfl4rdb#web_projects-section
+
+** FF Nexus Mix (400, 700)
+font-family: ff-nexus-mix, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: ff-nexus-mix, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+
+*** FF Nexus Serif (400, 700)
+font-family: ff-nexus-serif, serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: ff-nexus-serif, serif;
+font-weight: 400;
+font-style: italic;
+
+
+*** FF Scala (400,700)
+Scala Pro Italic
+font-family: ff-scala, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Scala Pro Regular
+font-family: ff-scala, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Scala Pro Bold
+font-family: ff-scala, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Scala Pro Bold Italic
+font-family: ff-scala, sans-serif;
+font-weight: 700;
+font-style: italic;
 */
+
+/* Import the fonts from Adobe Typekit for web project id */
+@import url("https://use.typekit.net/gfl4rdb.css");
+
 :root {
     /* PRIMARY FONTS */
-	/* sc0ttwad3: add default prompt */
-    --main-font: 'Source Sans Pro', 'Inter', sans-serif;
+    --main-font: ff-scala, 'Inter', sans-serif;
     --main-font-color: #d9d9d9;
     --main-font-size: 1.0em;
 
@@ -209,6 +259,9 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --scrollbar-track: true;
     --scrollbar-thumb: ;
 }
+
+
+
 
 /* --------------------------------------------------------------------------- */
 /*                      CONTENT PADDING & WIDTH                                */

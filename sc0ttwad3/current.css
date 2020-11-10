@@ -7,7 +7,7 @@
 
 /* OVERRIDING site.css */
 div {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -15,7 +15,7 @@ div {
 }
 
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -45,7 +45,7 @@ h1.rm-title-display textarea,
 .level1,
 .level2 {
 --font-family: "MesloLGS NF","Fira Code", Menlo, monospace;
-font-family: font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+font-family: font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 font-weight: 500 !important;
 --letter-spacing: -0.08em;
 }
@@ -82,8 +82,6 @@ font-size: 36px !important;
 flex-basis: 40% !important;
 }
 
-
-
 /* lighter bullets */
 #right-sidebar .controls .roam-bullet-closed,
 .controls .roam-bullet-closed {
@@ -99,7 +97,6 @@ opacity: 0.3;
 .block-border-left {
 border-color: #eee;
 }
-
 
 .roam-block-container h1 {
 font-weight: 300;
@@ -118,7 +115,7 @@ color: black;
 .roam-block-input,
 .roam-block span {
   font-family: "Source Serif Pro", Georgia, serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* align checkboxes better */
@@ -323,3 +320,12 @@ color: #b33ba9 !important;
 .rm-page-ref-link-color {
 color: #106ba3;
 }
+
+/* Hide the query string that appears at the top */
+.rm-query-title {
+      font-size: 0px !important;
+      &:after {
+         font-size: 14px;
+         content: "Query";
+      }
+   }
